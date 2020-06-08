@@ -1,0 +1,102 @@
+we have learnt : html <-> js
+
+//perform on the console & html file:
+
+//////task 01:
+
+////html file code:
+<html>
+    <head>
+        <title>learn js</title>
+        <style> </style>
+    </head>
+    <body>
+        
+        <h1>HI this is JS learning</h1>
+		<br>
+		<div id="mydiv"></div>      
+        <script src="learn.js"></script>
+        <p> Game Title </p>
+        <p> Game Description </p>
+        
+    </body>
+</html>
+
+////on console:
+$ document
+> whole webpage will be selected
+//document in java script is the whole //webpage
+
+$ document.body
+> will return the content of body tag
+
+$ document.head
+> will return the content of head tag
+
+**
+html stores the entire data in the form of DOM model. 
+DOM : Document Object Model
+
+                    document
+                    /        \
+                 head         body
+                 /  \         /  \
+            title    style  div  script
+
+DOM can be visualised as a tree. (DOM Tree)
+**
+
+//html provides some special functions:
+$ document.getElementByTagName('div')
+> return the array having the div tags. in our case length of array is 1. we have single div tag in out html code.
+
+//////task 02:
+
+////html file code:
+<html>
+    <head>
+        <title>learn js</title>
+        <style> </style>
+    </head>
+    <body>
+        
+        <h1>HI this is JS learning</h1>
+		<br>
+		<div id="mydiv"></div>  
+		<div> </div>    
+        <script src="learn.js"></script>
+        <p> Game Title </p>
+        <p> Game Description </p>
+        
+    </body>
+</html>
+
+////on console:
+$ document.getElementByTagName('div')
+> return the array having two elements, as we are having the two div tags
+
+$ document.getElementById('mydiv')
+> return the 'div' tag having id as 'mydiv'
+
+$ paragraph = document.getElementByTagName('p')
+> return array : o/p : HtmlCollection(2) [p,p]
+
+$ paragraph[1]
+> <p> Game Description </p>
+
+$ paragraph[1].innerText
+> "Game Description"
+
+$ paragraph[1].innerText = "Modified Game Description"
+> change will made on the webpage
+
+**
+we can do DOM Manipulations:
+1. insert
+2. delete
+3. modify
+**
+
+
+
+
