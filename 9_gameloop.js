@@ -42,7 +42,7 @@ function init(){
 	w:40,
 	h:40,
 	speed:10, 
-	}
+	};
 
 
 }
